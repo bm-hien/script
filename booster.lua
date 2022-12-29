@@ -13,7 +13,7 @@ local Window = Rayfield:CreateWindow({
        Invite = "YHfbb3M3Kq", -- The Discord invite code, do not include discord.gg/
        RememberJoins = true -- Set this to false to make them join the discord every time they load it up
     },
-    KeySystem = true, -- Set this to true to use our key system
+    KeySystem = false, -- Set this to true to use our key system
     KeySettings = {
        Title = "Bmhien game booster",
        Subtitle = "Key System",
@@ -21,8 +21,20 @@ local Window = Rayfield:CreateWindow({
        FileName = "Bmhien Key",
        SaveKey = true,
        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-       Key = "Thanksbmhobfuscator"
+       Key = "hi"
     }
  })
-
+local Tab = Window:CreateTab("CPU Optimize") -- Title, Image
+local Button = Tab:CreateButton({
+	Name = "White Screen",
+	Callback = function()
+		game:GetService("RunService"):Set3dRenderingEnabled(false)
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "Disable White Screen",
+	Callback = function()
+		game:GetService("RunService"):Set3dRenderingEnabled(true)
+	end,
+})
 Rayfield:LoadConfiguration()
