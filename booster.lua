@@ -6,7 +6,7 @@ local Window = Rayfield:CreateWindow({
     ConfigurationSaving = {
        Enabled = true,
        FolderName = nil, -- Create a custom folder for your hub/game
-       FileName = "Premium Bstory Hub"
+       FileName = "bmhien"
     },
     Discord = {
        Enabled = false,
@@ -21,7 +21,7 @@ local Window = Rayfield:CreateWindow({
        FileName = "Bmhien Key",
        SaveKey = true,
        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-       Key = "hi"
+       Key = "Thanksbmhobfuscator"
     }
  })
 local Tab = Window:CreateTab("CPU Optimize") -- Title, Image
