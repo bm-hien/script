@@ -25,17 +25,4 @@ local Window = Rayfield:CreateWindow({
     }
  })
 
-Rayfield:Notify({
-    Title = "Hi Buyer , Good Luck ",
-    Content = "Wellcome To Premium Gui",
-    Duration = 6.5,
-    Image = 11958238777,
-    Actions = { -- Notification Buttons
-       Ignore = {
-          Name = "welcome",
-          Callback = function()
-            print("Script load successfully!")
-         end
-      },
-
 Rayfield:LoadConfiguration()
